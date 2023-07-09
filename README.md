@@ -1,8 +1,8 @@
-# template
+# GBD3
 
 
 
-**template for pathology atlas repositories**
+**GBD3 for pathology atlas repositories**
 
 
 ```
@@ -11,9 +11,9 @@ see [make-html-WSI](https://github.com/pathologyatlas/make-html-WSI) for more in
 
 ```
 In this README file replace the following:
-TemplateEN with description of file in English
-TemplateTR with description of file in Turkish
-template with repository name
+GBD3 with description of file in English
+GBD3 with description of file in Turkish
+GBD3 with repository name
 
 ```
 
@@ -21,11 +21,11 @@ template with repository name
 ```
 update html file <head>
 
-<title>TemplateEN templateTR</title>
+<title>GBD3 GBD3</title>
 
-<meta name="keywords" content="TemplateEN, templateTR, patoloji, atlas, pathology, whole slide image">
+<meta name="keywords" content="GBD3, GBD3, patoloji, atlas, pathology, whole slide image">
 
-<meta name="description" content="TemplateEN templateTR">
+<meta name="description" content="GBD3 GBD3">
 
 ```
 
@@ -50,10 +50,10 @@ add to begining of qmd page
 
 ---
 description: |
-    TemplateEN
-    TemplateTR
+    GBD3
+    GBD3
 date: last-modified
-categories: [template]
+categories: [GBD3]
 page-layout: full
 bibliography: references.bib
 ---
@@ -68,7 +68,7 @@ bibliography: references.bib
 
 
 
-```{r language template, echo=FALSE, include=TRUE}
+```{r language GBD3, echo=FALSE, include=TRUE}
 source("./R/language.R")
 output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 ```
@@ -77,58 +77,58 @@ output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 
 
 ```{asis, echo = (language == "TR")}
-## TemplateTR {#sec-template}
+## GBD3 {#sec-GBD3}
 ```
 
 
 ```{asis, echo = (language == "EN")}
-## TemplateEN {#sec-template}
+## GBD3 {#sec-GBD3}
 ```
 
 
-```{r template screenshot, eval=TRUE, include=FALSE}
-if (!file.exists("./screenshots/template_screenshot.png")) {
+```{r GBD3 screenshot, eval=TRUE, include=FALSE}
+if (!file.exists("./screenshots/GBD3_screenshot.png")) {
 webshot2::webshot(
-  url = "https://images.patolojiatlasi.com/template/HE.html",
-  file = "./screenshots/template_screenshot.png"
+  url = "https://images.patolojiatlasi.com/GBD3/HE.html",
+  file = "./screenshots/GBD3_screenshot.png"
 )
 }
 ```
 
 ```{r, echo=FALSE, include=FALSE, eval=FALSE}
-knitr::include_url(url = "https://images.patolojiatlasi.com/template/HE.html")
+knitr::include_url(url = "https://images.patolojiatlasi.com/GBD3/HE.html")
 ```
 
 ```{r, echo=FALSE, include=FALSE, eval=FALSE}
-#| label: template_screenshot
-#| fig-cap: "TemplateTR"
-knitr::include_graphics("./screenshots/template_screenshot.png")
+#| label: GBD3_screenshot
+#| fig-cap: "GBD3"
+knitr::include_graphics("./screenshots/GBD3_screenshot.png")
 ```
 
 
 ::: {.content-hidden when-format="html"}
-TemplateTR
+GBD3
 :::
 
 ::: {.content-visible when-format="pdf"}
-TemplateTR
+GBD3
 :::
 
 
 
 ```{asis, echo = (language == "TR")}
 
-**templateTR**
+**GBD3**
 
 
-[![Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE.html)
+[![Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/GBD3_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/GBD3/HE.html) [Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/GBD3/HE.html)
 ```
 
 
 ```{asis, echo = ((language=="TR") & (output_type=="html"))}
 Mikroskopik görüntüleri inceleyin:
 
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/GBD3/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -137,14 +137,14 @@ Mikroskopik görüntüleri inceleyin:
 ```{comment} 
 asis, echo = (language == "TR")
 
-**templateTR**
+**GBD3**
 
 
-[![İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE_annotated.html)
+[![İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/GBD3_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/GBD3/HE_annotated.html) [İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/GBD3/HE_annotated.html)
 
 İşaretlenmiş mikroskopik görüntüleri inceleyin:
 
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/GBD3/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -155,20 +155,20 @@ asis, echo = (language == "TR")
 
 
 
-<button id="tani-case-template-btn">Tanıyı Göster</button>
-<div id="answer-template" style="display: none;">templateTR</div>
+<button id="tani-case-GBD3-btn">Tanıyı Göster</button>
+<div id="answer-GBD3" style="display: none;">GBD3</div>
 
 <script>
-  const showAnswer-templateBtn = document.getElementById('tani-case-template-btn');
-  const answer-template = document.getElementById('answer-template');
+  const showAnswer-GBD3Btn = document.getElementById('tani-case-GBD3-btn');
+  const answer-GBD3 = document.getElementById('answer-GBD3');
 
-  showAnswer-templateBtn.addEventListener('click', () => {
-    if (answer-template.style.display === 'none') {
-      answer-template.style.display = 'block';
-      showAnswer-templateBtn.textContent = 'Tanıyı Gizle';
+  showAnswer-GBD3Btn.addEventListener('click', () => {
+    if (answer-GBD3.style.display === 'none') {
+      answer-GBD3.style.display = 'block';
+      showAnswer-GBD3Btn.textContent = 'Tanıyı Gizle';
     } else {
-      answer-template.style.display = 'none';
-      showAnswer-templateBtn.textContent = 'Tanıyı Göster';
+      answer-GBD3.style.display = 'none';
+      showAnswer-GBD3Btn.textContent = 'Tanıyı Göster';
     }
   });
 </script>
@@ -195,9 +195,9 @@ asis, echo = ((language=="TR") & (output_type!="html"))
 
 ```{asis, echo = (language == "EN")}
 
-**templateEN**
+**GBD3**
 
-[![Click for Full Screen WSI](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Click for Full Screen WSI](https://images.patolojiatlasi.com/template/HE.html)
+[![Click for Full Screen WSI](./screenshots/GBD3_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/GBD3/HE.html) [Click for Full Screen WSI](https://images.patolojiatlasi.com/GBD3/HE.html)
 
 
 ```
@@ -208,7 +208,7 @@ asis, echo = ((language=="TR") & (output_type!="html"))
 
 See Microscopy with viewer: 
 
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/GBD3/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 ```
 
@@ -216,14 +216,14 @@ See Microscopy with viewer:
 ```{comment}
 asis, echo = (language == "EN")
 
-**templateEN**
+**GBD3**
 
-[![Click for Full Screen Annotated WSI](./screenshots/template_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [Click for Full Screen Annotated WSI](https://images.patolojiatlasi.com/template/HE_annotated.html)
+[![Click for Full Screen Annotated WSI](./screenshots/GBD3_screenshot.png){width="25%"}](https://images.patolojiatlasi.com/GBD3/HE_annotated.html) [Click for Full Screen Annotated WSI](https://images.patolojiatlasi.com/GBD3/HE_annotated.html)
 
 
 See Annotated Microscopy with viewer: 
 
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/GBD3/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 
 
@@ -232,20 +232,20 @@ See Annotated Microscopy with viewer:
 ```{comment}
 asis, echo = (language == "EN")
 
-<button id="dx-case-template-btn">Show the Diagnosis</button>
-<div id="answer-template" style="display: none;">templateEN</div>
+<button id="dx-case-GBD3-btn">Show the Diagnosis</button>
+<div id="answer-GBD3" style="display: none;">GBD3</div>
 
 <script>
-  const showAnswer-templateBtn = document.getElementById('dx-case-template-btn');
-  const answer-template = document.getElementById('answer-template');
+  const showAnswer-GBD3Btn = document.getElementById('dx-case-GBD3-btn');
+  const answer-GBD3 = document.getElementById('answer-GBD3');
 
-  showAnswer-templateBtn.addEventListener('click', () => {
-    if (answer-template.style.display === 'none') {
-      answer-template.style.display = 'block';
-      showAnswer-templateBtn.textContent = 'Hide the Diagnosis';
+  showAnswer-GBD3Btn.addEventListener('click', () => {
+    if (answer-GBD3.style.display === 'none') {
+      answer-GBD3.style.display = 'block';
+      showAnswer-GBD3Btn.textContent = 'Hide the Diagnosis';
     } else {
-      answer-template.style.display = 'none';
-      showAnswer-templateBtn.textContent = 'Show the Diagnosis';
+      answer-GBD3.style.display = 'none';
+      showAnswer-GBD3Btn.textContent = 'Show the Diagnosis';
     }
   });
 </script>
@@ -255,15 +255,15 @@ asis, echo = (language == "EN")
 
 ```{comment}
 r, eval=TRUE, echo=FALSE, include=FALSE, error=TRUE
-if (!file.exists("./screenshots/template_screenshot.png")) {
+if (!file.exists("./screenshots/GBD3_screenshot.png")) {
 
 url <- "https://img.youtube.com/vi/U9glkfQLTm4/maxresdefault.jpg"
-download.file(url, destfile = "./screenshots/template_screenshot.png", mode = "wb")
+download.file(url, destfile = "./screenshots/GBD3_screenshot.png", mode = "wb")
 }
 
-**TemplateTR**
+**GBD3**
 
-[![Video İçin Tıklayın](./screenshots/template_screenshot.png){width="25%"}](https://www.youtube.com/watch?v=) [Video İçin Tıklayın](https://www.youtube.com/watch?v=)
+[![Video İçin Tıklayın](./screenshots/GBD3_screenshot.png){width="25%"}](https://www.youtube.com/watch?v=) [Video İçin Tıklayın](https://www.youtube.com/watch?v=)
 
 ```
 
@@ -287,5 +287,5 @@ asis, echo = ((language=="EN") & (output_type!="html"))
 
 ```{comment}
 =html
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
+<iframe src="https://images.patolojiatlasi.com/GBD3/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 ```
