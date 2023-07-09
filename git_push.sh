@@ -56,9 +56,10 @@ do
 
   git add $file_group
   git commit -m "WIP Adding files from $start to $end"
-  echo "Push start after adding files from $start to $end"
+  echo "Push start after adding files from $start to $end. There are $total_files files in total."
+  echo "Batch number $((i+1)) is being processed."
   git push origin
   echo "Pushed files from $start to $end. There are $total_files files in total."
   echo "Batch number $((i+1)) has been processed."
-  sleep 20
+  sleep 120
 done
