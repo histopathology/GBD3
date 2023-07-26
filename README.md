@@ -5,69 +5,6 @@
 **GBD3 for pathology atlas repositories**
 
 
-```
-see [make-html-WSI](https://github.com/pathologyatlas/make-html-WSI) for more information and [TODO](https://github.com/pathologyatlas/TODO) to add cases
-```
-
-```
-In this README file replace the following:
-GBD3 with description of file in English
-GBD3 with description of file in Turkish
-GBD3 with repository name
-
-```
-
-
-```
-update html file <head>
-
-<title>GBD3 GBD3</title>
-
-<meta name="keywords" content="GBD3, GBD3, patoloji, atlas, pathology, whole slide image">
-
-<meta name="description" content="GBD3 GBD3">
-
-```
-
-
-
-```zsh
-
-vips dzsave HE.svs HE
-
-```
-
-
-
-```
-update html file to match .dzi file
-
-```
-
-
-```
-add to begining of qmd page
-
----
-description: |
-    GBD3
-    GBD3
-date: last-modified
-categories: [GBD3]
-page-layout: full
-bibliography: references.bib
----
-
-```
-
-
-
-> consider using git_push.sh script to upload files to github, since the number of generated files is huge
-
-> after upload complete, do not forget to activate github pages for the new repository
-
-
-
 ```{r language GBD3, echo=FALSE, include=TRUE}
 source("./R/language.R")
 output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
